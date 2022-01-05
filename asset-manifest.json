@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Decaden/static/css/main.4ecfe415.css",
+    "main.js": "/Decaden/static/js/main.39ddcec1.js",
+    "static/js/787.444fca95.chunk.js": "/Decaden/static/js/787.444fca95.chunk.js",
+    "static/media/dylan-calluy-E4TBps9k_Po-unsplash.jpg": "/Decaden/static/media/dylan-calluy-E4TBps9k_Po-unsplash.f9ba9a1262d9ec39fd7c.jpg",
+    "static/media/dylan-calluy-j9q18vvHitg-unsplash.jpg": "/Decaden/static/media/dylan-calluy-j9q18vvHitg-unsplash.911cbf3712be936d4179.jpg",
+    "static/media/dylan-calluy-moL-kDg0y3w-unsplash.jpg": "/Decaden/static/media/dylan-calluy-moL-kDg0y3w-unsplash.399b5762f68afb3ea23d.jpg",
+    "static/media/shubham-dhage-v0VjjYYFjOg-unsplash.jpg": "/Decaden/static/media/shubham-dhage-v0VjjYYFjOg-unsplash.8df304f716136dc84f91.jpg",
+    "static/media/shubham-dhage-T9rKvI3N0NM-unsplash.jpg": "/Decaden/static/media/shubham-dhage-T9rKvI3N0NM-unsplash.32afd26acdf049480d75.jpg",
+    "static/media/shubham-dhage-gC_aoAjQl2Q-unsplash.jpg": "/Decaden/static/media/shubham-dhage-gC_aoAjQl2Q-unsplash.2ff9bddb489545d9e26f.jpg",
+    "static/media/link.png": "/Decaden/static/media/link.a6890b65cb3595bb2c1a.png",
+    "static/media/commercial.png": "/Decaden/static/media/commercial.c7c6a966aa0beb65cffc.png",
+    "static/media/investment.png": "/Decaden/static/media/investment.33592a62560023bb6ff6.png",
+    "static/media/Main-Logo.jpg": "/Decaden/static/media/Main-Logo.68f9af801e76276a68f4.jpg",
+    "static/media/email-mail-pngrepo-com.png": "/Decaden/static/media/email-mail-pngrepo-com.6908c354c144c4b38df2.png",
+    "index.html": "/Decaden/index.html",
+    "main.4ecfe415.css.map": "/Decaden/static/css/main.4ecfe415.css.map",
+    "main.39ddcec1.js.map": "/Decaden/static/js/main.39ddcec1.js.map",
+    "787.444fca95.chunk.js.map": "/Decaden/static/js/787.444fca95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ecfe415.css",
+    "static/js/main.39ddcec1.js"
+  ]
+}
