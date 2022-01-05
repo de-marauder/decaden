@@ -1,0 +1,460 @@
+.Section1, .Section5 {
+    background-color: white;
+    height: 550px;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section1Div, .Section5 {
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.Section1Div {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Button {
+    position: relative;
+}
+
+.Section1 div {
+    height: 80%;
+}
+
+.Section1Div .Section1Text {
+    width: 50%;
+}
+.Section1Div .Section1SVG {
+    width: 40%;
+}
+
+.Section1 .Section1SVG svg {
+    height: 90%;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.Section1 h1 {
+    margin: 50px 0;
+    font-size: 50px;
+    width: 100%;
+}
+
+/* section 1 media queries */
+
+@media (max-width: 830px) {
+    .SVG1 {
+        margin: 30px 0
+    }
+    
+    .Section1 h1 {
+        font-size: 40px;
+        margin: 50px 30px
+    }
+}
+@media (max-width: 700px) {
+    .Section1 {
+        height: 450px;
+    }
+    .SVG1 {
+        margin: 30px 0;
+        height: 80%
+    }
+    
+    .Section1 h1 {
+        font-size: 30px;
+        margin: 50px 30px
+    }
+}
+@media (max-width: 530px) {
+    .Section1 .Section1Div {
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .Section1Div .Section1Text {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .Section1 .Section1SVG {
+        position: absolute;
+        width: 100%;
+        padding-top: 50px;
+        height: 700px;
+    }
+
+    .Section1 .Section1SVG svg {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        /* position: absolute; */
+        top: 25%;
+        left: 0
+    }
+
+    .Section1 h1 {
+        font-size: 33px;
+        margin: 30px 0px;
+    }
+}
+@media (max-width: 400px) {
+    .Section1 h1 {
+        font-size: 29px;
+    }
+    .SVG1_2 {
+        width: 250px;
+    }
+    .Section1 .Section1SVG_2 {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 330px) {
+    .Section1 h1 {
+        font-size: 28px;
+    }
+}
+
+.BgImg2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.Row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 580px;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+}
+
+.Card {
+    border-radius: 20px;
+}
+
+.Section2 .Row .Card {
+    height: 100%;
+    width: 29%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.SVGIcon svg, .SVGIcon img {
+    border: solid 2px goldenrod;
+    border-radius: 50%;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.Section2 .SVGIcon {
+    height: 30%;
+}
+
+.Section2 .Card hr {
+    width: 60%;
+}
+
+.Section2 .CardText {
+    height: 60%;
+    padding: 20px
+}
+
+.Section2 .CardText p {
+    margin: 20px
+}
+.Section2 .CardText h3 {
+    font-size: 20px;
+    color: #fff
+}
+
+/* Section 2 media queries */
+@media (max-width: 920px) {
+    .Section2 {
+        height: 1100px
+    }
+    .Section2 .Row {
+        justify-content: space-evenly;
+    }
+    .Section2 .Row .Card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media (max-width: 660px) {
+    .Section2{
+        height: 1600px
+    }
+    .Section2 .Row {
+        justify-content: center
+    }
+    .Section2 .Row .Card {
+        width: 60%;
+    }
+}
+@media (max-width: 520px) {
+    .Section2 .Row .Card {
+        width: 80%;
+    }
+    .Section2 .Row {
+        padding-inline: 20px;
+    }
+}
+@media (max-width: 420px) {
+    .Section2 .Row .Card {
+        width: 100%;
+    }
+}
+
+.Section3 {
+    background-color: white;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Section3 .Section3Text {
+    padding: 20px;
+    width: 50% 
+}
+
+.Section3 h1, .Section4 h1, .Section5 h1 {
+    font-size: 60px;
+    margin: 30px 0px;
+}
+
+.Section3 h1, .Section4 h1, .Section4 h2{
+    color: inherit;
+}
+
+.Section3 h2, .Section4 h2, .Section5 h2, .Section5 h4 {
+    color: #4a4949;
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+.Section3 p {
+    color: #4a4949;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.Section3 h3 {
+    color: #4a4949;
+    font-size: 25px;
+}
+
+.Section3 .Card hr {
+    margin-bottom: 10px;
+    width: 40%;
+    border: 1px solid
+}
+
+.Section3 svg {
+    width: 50%;
+    padding: 0 20px
+}
+
+/* Section 3 media queries */
+@media (max-width: 920px) {
+    .Section3 {
+        height: 700px;
+    }
+}
+@media (max-width: 660px) {
+    .Section3 {
+        height: 900px;
+    }
+}
+@media (max-width: 500px) {
+    .Section3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    .Section3 .Section3Text {
+        position: relative;
+        width: 90% 
+    }
+    .Section3 p {
+        text-align: justify;
+    }
+    .Section3 .Card hr {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .Section3 svg {
+        position: absolute;
+        margin: auto;
+        opacity: 0.7;
+        width: 80%
+    }
+}
+
+.Section4, .Section5 {
+    position: relative;
+    text-align: center;
+    height: 1250px;
+}
+
+.Section4 {
+    height: 1300px;
+    text-align: center;
+}
+
+.Section4 h1 {
+    margin: 0;
+    padding: 40px 0
+}
+
+.Section4 h2 {
+    color: #fff
+}
+
+.Section4 .Row {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.Section4 .Row .Card {
+    height: 80%;
+    width: 40%;
+    margin: 35px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Section4 .SVGIcon {
+    height: 40%
+}
+.Section4 .SVGIcon svg, .Section4 .SVGIcon img {
+    border: none;
+    width: 120px;
+    height: 120px;
+}
+
+.Section4 .Card hr {
+    width: 60%;
+    margin-bottom: 10px;
+    border: solid 1px #daa520 
+}
+
+.Section4 .CardText {
+    height: 60%;
+    padding: 20px
+}
+.Section4 .CardText h4 {
+    color: #fff;
+}
+.Section4 .CardText p {
+    margin: 20px
+}
+
+/* Section 4 media queries */
+@media (max-width: 740px) {
+    .Section4 h2 {
+        width: 70%
+    }
+    .Section4 .Row .Card {
+        /* width: 100%; */
+        margin: 0 0 35px; 
+    }
+}
+@media (max-width: 500px) {
+    .Section4 {
+        padding: 0 20px;
+        height: 1900px;
+    }
+    .Section4 h1 {
+        font-size: 50px;
+    }
+    .Section4 .Row .Card {
+        width: 100%;
+        height: 350px;
+    }
+    .Section4 .Row {
+        width: 100%;
+        height: 600px;
+    }
+    .Section4 .SVGIcon svg, .Section4 .SVGIcon img {
+        border: none;
+        width: 90px;
+        height: 90px;
+    }
+}
+@media (max-width: 350px) {
+    .Section4 .CardText {
+        padding: 5px
+    }
+    .Section4 h1 {
+        font-size: 40px;
+    }
+}
+
+.Section5 {
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+}
+
+.Section5 svg {
+    position: absolute;
+    width: 60%;
+    opacity: 0.4
+    /* display: inline-flex; */
+}
+
+.Section5 > div {
+    width: 60%;
+    position: relative;
+}
+
+.Section5 div p {
+    font-size: 20px;
+    margin: 40px auto;
+    color: #4a4949
+}
+
+.Section5 hr {
+    border: solid 1px
+}
+
+/* Section 5 media queries */
+@media (max-width: 570px){
+    .Section5 > div {
+        width: 80%
+    }
+}
+@media (max-width: 570px){
+    .Section5 {
+        padding-inline: 20px;
+    }
+    .Section5 > div {
+        width: 90%
+    }
+}

@@ -1,0 +1,16 @@
+.Footer {
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #181816;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer img {
+    width: 20px;
+    height: 20px
+}

@@ -1,0 +1,35 @@
+.Submit {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: inherit;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.Submit:hover {
+    background-color: goldenrod;
+    color: rgb(43, 43, 38);
+    cursor: pointer;
+}
+
+.Normal {
+    border: 2px dashed #007eff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
+    color: #007eff;
+}
+
+.Normal:hover {
+    background-color: #007eff;
+    border: 2px solid #007eff;
+    color: #fff;
+    cursor: pointer;
+}
