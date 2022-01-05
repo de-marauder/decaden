@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Decaden/static/css/main.4ecfe415.css",
-    "main.js": "/Decaden/static/js/main.39ddcec1.js",
+    "main.js": "/Decaden/static/js/main.442501ed.js",
     "static/js/787.444fca95.chunk.js": "/Decaden/static/js/787.444fca95.chunk.js",
     "static/media/dylan-calluy-E4TBps9k_Po-unsplash.jpg": "/Decaden/static/media/dylan-calluy-E4TBps9k_Po-unsplash.f9ba9a1262d9ec39fd7c.jpg",
     "static/media/dylan-calluy-j9q18vvHitg-unsplash.jpg": "/Decaden/static/media/dylan-calluy-j9q18vvHitg-unsplash.911cbf3712be936d4179.jpg",
@@ -16,11 +16,11 @@
     "static/media/email-mail-pngrepo-com.png": "/Decaden/static/media/email-mail-pngrepo-com.6908c354c144c4b38df2.png",
     "index.html": "/Decaden/index.html",
     "main.4ecfe415.css.map": "/Decaden/static/css/main.4ecfe415.css.map",
-    "main.39ddcec1.js.map": "/Decaden/static/js/main.39ddcec1.js.map",
+    "main.442501ed.js.map": "/Decaden/static/js/main.442501ed.js.map",
     "787.444fca95.chunk.js.map": "/Decaden/static/js/787.444fca95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ecfe415.css",
-    "static/js/main.39ddcec1.js"
+    "static/js/main.442501ed.js"
   ]
 }
