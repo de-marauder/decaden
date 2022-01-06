@@ -6,6 +6,10 @@ header {
     z-index: 500
 }
 
+a {
+    text-decoration: none;
+}
+
 .Container {
     padding: 10px;
     display: flex;
