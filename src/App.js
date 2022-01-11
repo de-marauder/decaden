@@ -1,4 +1,4 @@
-import {React, Component} from 'react';
+import { React, Component } from 'react';
 
 import Navbar from './Components/Navbar/Navbar';
 import ContactUs from './Containers/ContactUs/ContactUs';
@@ -8,13 +8,13 @@ import './App.css';
 
 class App extends Component {
 
-  render () {
+  render() {
     return (
       <div className="App" >
-        <Navbar header/>
+        <Navbar header />
         <Body />
         <ContactUs />
-        <Navbar footer /> 
+        <Navbar footer />
       </div>
     );
   }

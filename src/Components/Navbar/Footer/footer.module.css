@@ -10,7 +10,16 @@
     align-items: center;
 }
 
+.Footer .Logo {
+    width: auto;
+    height: 50px
+}
+
 .Footer img {
     width: 20px;
     height: 20px
+}
+
+.Footer p {
+    color: rgba(218, 165, 32, 0.7)
 }

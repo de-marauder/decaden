@@ -1,11 +1,12 @@
 import { React, Component } from 'react';
+import styled, { css, keyframes } from 'styled-components';
 
 import classes from './Carousel.module.css';
-import Img1 from '../../../images/dylan-calluy-E4TBps9k_Po-unsplash.jpg';
-import Img2 from '../../../images/dylan-calluy-j9q18vvHitg-unsplash.jpg';
-import Img3 from '../../../images/dylan-calluy-moL-kDg0y3w-unsplash.jpg';
-import Img4 from '../../../images/dylan-calluy-E4TBps9k_Po-unsplash.jpg';
-import Img5 from '../../../images/shubham-dhage-gC_aoAjQl2Q-unsplash.jpg';
+import Img1 from '../../../images/logo text 4.png';
+import Img2 from '../../../images/pexels-rodnae-productions-8369829.jpg';
+import Img3 from '../../../images/pexels-worldspectrum-844124.jpg';
+import Img4 from '../../../images/pexels-alesia-kozik-6772024.jpg';
+import Img5 from '../../../images/pexels-alesia-kozik-6772103.jpg';
 
 const itemArray = [Img1, Img2, Img3, Img4, Img5]
 
@@ -16,33 +17,33 @@ class Carousel extends Component {
     }
 
     fwdButtonHandler = () => {
-        console.log("Going fwd", this.state.activeItem)
+        // console.log("Going fwd", this.state.activeItem)
         if (this.state.activeItem >= itemArray.length - 1) {
-            console.log(`resetting active item to ${itemArray.length - 1}`)
+            // console.log(`resetting active item to ${itemArray.length - 1}`)
             // this.setState({ activeItem: itemArray.length - 1, fwdDisabled: true })
             this.setState({ activeItem: 0 })
         } else {
             // this.setState({ activeItem: this.state.activeItem + 1, bwdDisabled: false })
-            this.setState({ activeItem: this.state.activeItem + 1})
-            console.log("setting active item")
+            this.setState({ activeItem: this.state.activeItem + 1 })
+            // console.log("setting active item")
         }
     }
 
     bwdButtonHandler = () => {
-        console.log(`Going bwd to ${this.state.activeItem - 1}`)
+        // console.log(`Going bwd to ${this.state.activeItem - 1}`)
         if (this.state.activeItem <= 0) {
-            console.log("resetting active item to 0")
+            // console.log("resetting active item to 0")
             // this.setState({ activeItem: 0, bwdDisabled: true })
             this.setState({ activeItem: itemArray.length - 1 })
         } else {
             // this.setState({ activeItem: this.state.activeItem - 1, fwdDisabled: false })
             this.setState({ activeItem: this.state.activeItem - 1 })
-            console.log("setting active item")
+            // console.log("setting active item")
         }
     }
 
     loop = () => {
-        this.interval = setInterval(()=>{
+        this.interval = setInterval(() => {
             this.fwdButtonHandler()
         }, 4000)
     }
@@ -52,21 +53,21 @@ class Carousel extends Component {
     }
 
     btnDisableSetup = () => {
-        if (this.state.activeItem > 0 && this.state.activeItem < itemArray.length-1){
+        if (this.state.activeItem > 0 && this.state.activeItem < itemArray.length - 1) {
             this.setState({
                 fwdDisabled: false,
                 bwdDisabled: false
             })
         } else if (this.state.activeItem === 0) {
-            this.setState({bwdDisabled: true})
-        } else if (this.state.activeItem === itemArray.length-1) {
-            this.setState({fwdDisabled: true})
+            this.setState({ bwdDisabled: true })
+        } else if (this.state.activeItem === itemArray.length - 1) {
+            this.setState({ fwdDisabled: true })
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log("[componentDidMount]")
-        this.loop()
+        // this.loop()
         // this.btnDisableSetup()
     }
 
@@ -74,34 +75,57 @@ class Carousel extends Component {
         const carouselArray = itemArray.map((el, id) => {
             return (
                 <div key={id}
-                    style={{  width: "100vw" }}
+                    style={{ width: "100vw" }}
                     className={classes.Item}>
                     <img className={classes.BgImg} src={el} alt='1' />
                 </div>
             )
         })
+
+        const keyframeItems = carouselArray.map((el, id) => {
+            // return (`${(((id+1)/(carouselArray.length)))*100-10}% {transform: translateX(${-100 * (id)}vw)}`)
+            return (`${((id+1)*15)}% {transform: translateX(${-100 * (id)}vw)}`)
+        })
+        console.log(keyframeItems.join(" "))
+
+        const keyFrames = keyframes`{${keyframeItems.join(' ')}}`
+
+        console.log(keyFrames)
+
+
+        const animation = css`${keyFrames} 20s steps(1, end) infinite`
+        
+        // console.log(style)
+        const Style = styled.div`
+            animation: ${animation};
+#        `
         const items = (
             <div className={classes.Carousel}
-                onMouseEnter={() => {this.loopDisable()}}
-                onMouseLeave={() => {this.loop()}} >
-                <div
+            // onClick={() =>  this.loopDisable() }
+                // onMouseEnter={() => {  }}
+                // onMouseLeave={() => { this.loop() }} 
+            >
+                <Style
                     className={classes.Container}
-                    style={{ transform: `translateX(${-100 * (this.state.activeItem)}vw)` }}>
+                    // style={style}{ transform: `translateX(${-100 * (this.state.activeItem)}vw)` }}
+                    >
                     {carouselArray}
-                </div>
+                    {/* {style} */}
+                </Style>
                 {/* <div className={classes.Button}> */}
-                <button
+                {/* <button
                     onClick={() => { this.bwdButtonHandler() }}
                     disabled={this.state.bwdDisabled}
                     className={classes.Button + " " + classes.bwd}>&lt;</button>
                 <button
                     onClick={() => { this.fwdButtonHandler() }}
                     disabled={this.state.fwdDisabled}
-                    className={classes.Button + ' ' + classes.fwd}>&gt;</button>
+                    className={classes.Button + ' ' + classes.fwd}>&gt;</button> */}
                 {/* </div> */}
             </div>
-
         )
+        
+
         return (
             <div>
                 {items}
