@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Decaden/static/css/main.73a88c33.css",
+    "main.js": "/Decaden/static/js/main.83b8ad49.js",
+    "static/js/787.444fca95.chunk.js": "/Decaden/static/js/787.444fca95.chunk.js",
+    "static/media/pexels-alesia-kozik-6772024.jpg": "/Decaden/static/media/pexels-alesia-kozik-6772024.5dca3b392e416bc7fa09.jpg",
+    "static/media/pexels-alesia-kozik-6772103.jpg": "/Decaden/static/media/pexels-alesia-kozik-6772103.03f9a959f8f00c1c635b.jpg",
+    "static/media/pexels-rodnae-productions-8369829.jpg": "/Decaden/static/media/pexels-rodnae-productions-8369829.d4518691a29aa1cfda0b.jpg",
+    "static/media/pexels-worldspectrum-844124.jpg": "/Decaden/static/media/pexels-worldspectrum-844124.28dd7b1a051e111a6c2c.jpg",
+    "static/media/shubham-dhage-v0VjjYYFjOg-unsplash.jpg": "/Decaden/static/media/shubham-dhage-v0VjjYYFjOg-unsplash.8df304f716136dc84f91.jpg",
+    "static/media/logo text 2(white).png": "/Decaden/static/media/logo text 2(white).9fd32e8cd31e66a1f1b2.png",
+    "static/media/logo text 4.png": "/Decaden/static/media/logo text 4.c069590043717f4587eb.png",
+    "static/media/logo text 1.png": "/Decaden/static/media/logo text 1.0538f42e7db7fcfdd5fa.png",
+    "static/media/link.png": "/Decaden/static/media/link.a6890b65cb3595bb2c1a.png",
+    "static/media/agreement.png": "/Decaden/static/media/agreement.50f039b136e08e6cb4cc.png",
+    "static/media/commercial.png": "/Decaden/static/media/commercial.c7c6a966aa0beb65cffc.png",
+    "static/media/investment.png": "/Decaden/static/media/investment.33592a62560023bb6ff6.png",
+    "static/media/LOGO alone.png": "/Decaden/static/media/LOGO alone.94e29e9317b399959b55.png",
+    "static/media/email-mail-pngrepo-com.png": "/Decaden/static/media/email-mail-pngrepo-com.6908c354c144c4b38df2.png",
+    "index.html": "/Decaden/index.html",
+    "main.73a88c33.css.map": "/Decaden/static/css/main.73a88c33.css.map",
+    "main.83b8ad49.js.map": "/Decaden/static/js/main.83b8ad49.js.map",
+    "787.444fca95.chunk.js.map": "/Decaden/static/js/787.444fca95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73a88c33.css",
+    "static/js/main.83b8ad49.js"
+  ]
+}
