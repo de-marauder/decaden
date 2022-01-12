@@ -1,6 +1,7 @@
 import {React, Component} from 'react';
 
-import logo from '../../../images/Main-Logo.jpg';
+import logo1 from '../../../images/LOGO alone.png';
+import logo2 from '../../../images/logo text 2(white).png';
 import classes from './Header.module.css';
 
 class header extends Component {
@@ -43,9 +44,12 @@ class header extends Component {
             <nav className={classes.Dropdown}>
                 {close}
                 <ul>
-                    <li><a href="#">Home</a></li><hr/>
-                    <li><a href="#">About</a></li><hr/>
-                    <li><a href="#">Contact Us</a></li>
+                    {/* <li><Link to='/'>Home</Link></li><hr/>
+                    <li><Link to='/about'>About</Link></li><hr/>
+                    <li><Link to='/contact'>Contact Us</Link></li> */}
+                    <li><a href='#1'>Home</a></li><hr/>
+                    <li><a href='#2'>About</a></li><hr/>
+                    <li><a href='#3'>Contact Us</a></li>
                 </ul>
             </nav>
         ) : null
@@ -53,13 +57,14 @@ class header extends Component {
         return (
             <header>
                 <div className={classes.Container}>
-                    <img src = {logo} width='180vw' alt="" />
+                    <img className={classes.Logo1} src = {logo1} alt="" />
+                    <img className={classes.Logo2} src = {logo2} alt="" />
                     {menu}
                     <nav className={classes.List}>
                         <ul>
-                            <li><a href={'#'}>Home</a></li>
-                            <li><a href={'#'}>About</a></li>
-                            <li><a href={'#'}>Contact Us</a></li>
+                            <li><a href={'#1'}>Home</a></li>
+                            <li><a href={'#2'}>About</a></li>
+                            <li><a href={'#3'}>Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>

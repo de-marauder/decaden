@@ -1,7 +1,8 @@
 header {
     position: fixed;
+    height: 80px;
     width: 100%;
-    background-color: rgba(34, 34, 30, 0.9);
+    background-color: rgba(34, 34, 30, 0.99);
     align-items: center;
     z-index: 500
 }
@@ -10,8 +11,19 @@ a {
     text-decoration: none;
 }
 
+.Logo1 {
+    display: none;
+    /* height: 50px */
+
+}
+
+header .Logo1, header .Logo2 {
+    height: 50px
+}
+
 .Container {
     padding: 10px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,27 +94,39 @@ ul li a:hover {
     color:#fff
 }
 
-@media (min-width: 500px) {
-    .Container {
-        justify-content: flex-start;
-    }
+@media (min-width: 450px) {
     .List {
         align-items: center;
         display: flex;
         margin-right: 20px;
         justify-items: center;
     }
-
-    .Dropdown {
-        display: none;
-    }
-
     .List li {
         display: inline-block;
         padding: 0 10px; 
     }
-
+    .Dropdown {
+        display: none;
+    }
     .Menu {
         display: none;
+    }
+    .Logo1 {
+        display: none;
+    }
+}
+
+@media (min-width: 580px) {
+    .Container {
+        justify-content: space-between;
+    }
+    .Logo1 {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1300px) {
+    header .Container {
+        padding: 0 100px;
     }
 }

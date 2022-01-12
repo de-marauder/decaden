@@ -125,6 +125,14 @@
         font-size: 28px;
     }
 }
+@media (min-width: 1150px) {
+    .Section1, .Section5 {
+        padding-inline: 300px
+    }
+    .Section3 {
+        padding-inline: 200px
+    }
+}
 
 .BgImg2 {
     position: absolute;
@@ -149,25 +157,25 @@
 }
 
 .Section2 .Row .Card {
-    height: 100%;
+    height: 450px;
     width: 29%;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .SVGIcon svg, .SVGIcon img {
     border: solid 2px goldenrod;
     border-radius: 50%;
-    margin: 30px;
     width: 100px;
     height: 100px;
 }
 
-.Section2 .SVGIcon {
-    height: 30%;
+.SVGIcon {
+    margin: 30px
 }
 
 .Section2 .Card hr {
@@ -190,7 +198,7 @@
 /* Section 2 media queries */
 @media (max-width: 920px) {
     .Section2 {
-        height: 1100px
+        height: 1024px
     }
     .Section2 .Row {
         justify-content: space-evenly;
@@ -202,7 +210,7 @@
 }
 @media (max-width: 660px) {
     .Section2{
-        height: 1600px
+        height: 1550px
     }
     .Section2 .Row {
         justify-content: center
@@ -227,7 +235,7 @@
 
 .Section3 {
     background-color: white;
-    height: 700px;
+    height: 900px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -381,15 +389,16 @@
         width: 70%
     }
     .Section4 .Row .Card {
-        /* width: 100%; */
-        margin: 0 0 35px; 
+        width: 60%;
+        margin: 0 0 35px;
+    }
+    .Section4 {
+        padding: 0 20px;
+        height: 2200px;
     }
 }
 @media (max-width: 500px) {
-    .Section4 {
-        padding: 0 20px;
-        height: 1900px;
-    }
+    
     .Section4 h1 {
         font-size: 50px;
     }
@@ -407,12 +416,15 @@
         height: 90px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 370px) {
     .Section4 .CardText {
         padding: 5px
     }
     .Section4 h1 {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .Section4 h2 {
+        font-size: 20px;
     }
 }
 

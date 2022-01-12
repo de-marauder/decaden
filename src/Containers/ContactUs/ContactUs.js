@@ -28,6 +28,10 @@ class ContactUs extends Component {
         })
     }
 
+    submitHandler = () => {
+        alert("Your mail has been successfully subimtted!\nThank you!!!")
+    }
+
     render() {
         let name;
         let type;
@@ -76,7 +80,7 @@ class ContactUs extends Component {
         })
 
         return (
-            <div className={classes.Contact}>
+            <div id='3' className={classes.Contact}>
                 <div >
                 <img className={classes.BgImg} src={bgImg} alt=""/>
                     <h1>- Contact DECADEN -</h1>
@@ -89,7 +93,7 @@ class ContactUs extends Component {
                     </h4>
                     <form className={classes.Form} action="">
                         {input}
-                        <Button type={'Submit'} >SUBMIT</Button>
+                        <Button doStuff={() => this.submitHandler()} type={'Submit'} >SUBMIT</Button>
                     </form>
                 </div>
             </div>
