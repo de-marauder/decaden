@@ -134,6 +134,8 @@
     }
 }
 
+/* Section 2 */
+
 .BgImg2 {
     position: absolute;
     left: 0;
@@ -233,6 +235,8 @@
     }
 }
 
+/* Section 3 */
+
 .Section3 {
     background-color: white;
     height: 900px;
@@ -273,8 +277,14 @@
 }
 
 .Section3 .Card hr {
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     width: 40%;
+    
+}
+
+.Section3  hr {
+    margin: 0 0 10px;
+    width: 90%;
     border: 1px solid
 }
 
@@ -303,6 +313,10 @@
     .Section3 .Section3Text {
         position: relative;
         width: 90% 
+    }
+    .Section3  hr {
+        margin: 0 auto 10px;
+        width: 90%;
     }
     .Section3 p {
         text-align: justify;
@@ -385,6 +399,10 @@
 
 /* Section 4 media queries */
 @media (max-width: 740px) {
+    .Section4 {
+        padding: 0 20px;
+        height: 2200px;
+    }
     .Section4 h2 {
         width: 70%
     }
@@ -392,13 +410,12 @@
         width: 60%;
         margin: 0 0 35px;
     }
-    .Section4 {
-        padding: 0 20px;
-        height: 2200px;
-    }
 }
 @media (max-width: 500px) {
-    
+    .Section4 {
+        /* padding: 0 20px; */
+        height: 1900px;
+    }
     .Section4 h1 {
         font-size: 50px;
     }

@@ -65,11 +65,11 @@ class Carousel extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log("[componentDidMount]")
-        // this.loop()
-        // this.btnDisableSetup()
-    }
+    // componentDidMount() {
+    //     // console.log("[componentDidMount]")
+    //     // this.loop()
+    //     // this.btnDisableSetup()
+    // }
 
     render() {
         const carouselArray = itemArray.map((el, id) => {
@@ -86,11 +86,11 @@ class Carousel extends Component {
             // return (`${(((id+1)/(carouselArray.length)))*100-10}% {transform: translateX(${-100 * (id)}vw)}`)
             return (`${((id+1)*15)}% {transform: translateX(${-100 * (id)}vw)}`)
         })
-        console.log(keyframeItems.join(" "))
+        // console.log(keyframeItems.join(" "))
 
         const keyFrames = keyframes`{${keyframeItems.join(' ')}}`
 
-        console.log(keyFrames)
+        // console.log(keyFrames)
 
 
         const animation = css`${keyFrames} 20s steps(1, end) infinite`
