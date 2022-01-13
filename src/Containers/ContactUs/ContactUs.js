@@ -1,7 +1,7 @@
 import {React, Component} from 'react';
 
 import Input from '../../Components/UI/Input/Input';
-import Button from '../../Components/UI/Button/Button';
+// import Button from '../../Components/UI/Button/Button';
 
 // import bgImg from '../../images/shubham-dhage-T9rKvI3N0NM-unsplash.jpg'
 import emailIcon from '../../images/email-mail-pngrepo-com.png'
@@ -114,11 +114,21 @@ class ContactUs extends Component {
                         <span>
                             <img src={emailIcon} alt="email-icon" />
                         </span>
-                        <a href="/decadenofficial@gmail.com">decadenofficial@gmail.com</a>
+                        <a href={`mailto:ezikegodson@gmail.com?subject=An inquiry by ${this.state.name} on ${this.state.subject}`}>decadenofficial@gmail.com</a>
                     </h4>
-                    <form className={classes.Form} action="">
+                    <form className={classes.Form} 
+                        action={`
+                            mailto:ezikegodson@gmail.com?
+                            subject=${this.state.subject}&
+                            message=${this.state.message}&
+                            from=${this.state.email}
+                        `}>
                         {input}
-                        <Button doStuff={() => this.submitHandler()} type={'Submit'} >SUBMIT</Button>
+                        <input className={classes.Submit} 
+                            type='submit' 
+                            value='SUBMIT' 
+                            onClick={() => this.submitHandler()} />
+                        {/* <Button doStuff={() => this.submitHandler()} type='Submit' >SUBMIT</Button> */}
                     </form>
                 </div>
             </div>

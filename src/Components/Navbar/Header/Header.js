@@ -44,9 +44,6 @@ class header extends Component {
             <nav className={classes.Dropdown}>
                 {close}
                 <ul>
-                    {/* <li><Link to='/'>Home</Link></li><hr/>
-                    <li><Link to='/about'>About</Link></li><hr/>
-                    <li><Link to='/contact'>Contact Us</Link></li> */}
                     <li><a href='#1'>Home</a></li><hr/>
                     <li><a href='#2'>About</a></li><hr/>
                     <li><a href='#3'>Contact Us</a></li>

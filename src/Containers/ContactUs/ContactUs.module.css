@@ -45,13 +45,26 @@
 }
 
 .Form input, .Form textarea {
-    border: 1px solid goldenrod
+    border: 1px solid goldenrod;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: rgb(255, 245, 238);
+    border-radius: 10px;
+    margin: 6px;
 }
 
+.Form .Submit {
+    border: 2px solid goldenrod;
+    display: block;
+    margin: 20px auto;
+}
+.Form .Submit:hover {
+    background-color:goldenrod;
+    color: rgb(43, 43, 38);
+}
 .Contact .BgImg {
     position: absolute;
     opacity: 0.6;
-    /* z-index: -10; */
     width: 100%;
     height: 100%;
     left: 0;
