@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Decaden/static/css/main.5253ff09.css",
-    "main.js": "/Decaden/static/js/main.2274b115.js",
+    "main.css": "/Decaden/static/css/main.6fe72d66.css",
+    "main.js": "/Decaden/static/js/main.10a8c3b0.js",
     "static/js/787.444fca95.chunk.js": "/Decaden/static/js/787.444fca95.chunk.js",
     "static/media/pexels-alesia-kozik-6772024.jpg": "/Decaden/static/media/pexels-alesia-kozik-6772024.5dca3b392e416bc7fa09.jpg",
     "static/media/pexels-alesia-kozik-6772103.jpg": "/Decaden/static/media/pexels-alesia-kozik-6772103.03f9a959f8f00c1c635b.jpg",
@@ -18,12 +18,12 @@
     "static/media/LOGO alone.png": "/Decaden/static/media/LOGO alone.94e29e9317b399959b55.png",
     "static/media/email-mail-pngrepo-com.png": "/Decaden/static/media/email-mail-pngrepo-com.6908c354c144c4b38df2.png",
     "index.html": "/Decaden/index.html",
-    "main.5253ff09.css.map": "/Decaden/static/css/main.5253ff09.css.map",
-    "main.2274b115.js.map": "/Decaden/static/js/main.2274b115.js.map",
+    "main.6fe72d66.css.map": "/Decaden/static/css/main.6fe72d66.css.map",
+    "main.10a8c3b0.js.map": "/Decaden/static/js/main.10a8c3b0.js.map",
     "787.444fca95.chunk.js.map": "/Decaden/static/js/787.444fca95.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5253ff09.css",
-    "static/js/main.2274b115.js"
+    "static/css/main.6fe72d66.css",
+    "static/js/main.10a8c3b0.js"
   ]
 }
