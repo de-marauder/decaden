@@ -29,7 +29,7 @@ class ContactUs extends Component {
     }
 
     submitHandler = () => {
-        alert("Your mail has been successfully subimtted!\nThank you!!!")
+        alert("Your mail has been successfully submitted!\nThank you!!!")
     }
 
     render() {
@@ -120,7 +120,7 @@ class ContactUs extends Component {
                         action={`mailto:ezikegodson@gmail.com`} 
                         enctype='multipart/form-data'
                         name='EmailForm'
-                        method='POST' >
+                        method='GET' >
                         {input}
                         <input className={classes.Submit} 
                             type='submit' 
