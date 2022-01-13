@@ -1,7 +1,7 @@
 import {React, Component} from 'react';
 
 import Input from '../../Components/UI/Input/Input';
-// import Button from '../../Components/UI/Button/Button';
+import Button from '../../Components/UI/Button/Button';
 
 // import bgImg from '../../images/shubham-dhage-T9rKvI3N0NM-unsplash.jpg'
 import emailIcon from '../../images/email-mail-pngrepo-com.png'
@@ -28,7 +28,8 @@ class ContactUs extends Component {
         })
     }
 
-    submitHandler = () => {
+    submitHandler = (event) => {
+        event.preventDefault()
         alert("Your mail has been successfully submitted!\nThank you!!!")
     }
 
@@ -116,17 +117,21 @@ class ContactUs extends Component {
                         </span>
                         <a href={`mailto:ezikegodson@gmail.com?subject=An inquiry by ${this.state.name} on ${this.state.subject}`}>decadenofficial@gmail.com</a>
                     </h4>
-                    <form className={classes.Form} 
-                        action={`mailto:ezikegodson@gmail.com`} 
-                        enctype='multipart/form-data'
-                        name='EmailForm'
-                        method='GET' >
+                    <form className={classes.Form} >
                         {input}
-                        <input className={classes.Submit} 
-                            type='submit' 
-                            value='SUBMIT' />
-                            {/* onClick={() => this.submitHandler()}  */}
-                        {/* <Button doStuff={() => this.submitHandler()} type='Submit' >SUBMIT</Button> */}
+                        <a 
+                            href={`
+                                mailto:ezikegodson@gmail.com?
+                                subject=${this.state.subject}&
+                                body=${this.state.message}&
+                                `}>
+                            <Button 
+                                type='Submit'
+                                doStuff={(event) => this.submitHandler(event)} >SUBMIT</Button>    
+                        </a>
+                        {/* <input } 
+                            value='SUBMIT' /> */}
+                            {/*   */}
                     </form>
                 </div>
             </div>
