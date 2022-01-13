@@ -117,17 +117,15 @@ class ContactUs extends Component {
                         <a href={`mailto:ezikegodson@gmail.com?subject=An inquiry by ${this.state.name} on ${this.state.subject}`}>decadenofficial@gmail.com</a>
                     </h4>
                     <form className={classes.Form} 
-                        action={`
-                            mailto:ezikegodson@gmail.com?
-                            subject=${this.state.subject}&
-                            message=${this.state.message}&
-                            from=${this.state.email}
-                        `}>
+                        action={`mailto:ezikegodson@gmail.com`} 
+                        enctype='multipart/form-data'
+                        name='EmailForm'
+                        method='POST' >
                         {input}
                         <input className={classes.Submit} 
                             type='submit' 
-                            value='SUBMIT' 
-                            onClick={() => this.submitHandler()} />
+                            value='SUBMIT' />
+                            {/* onClick={() => this.submitHandler()}  */}
                         {/* <Button doStuff={() => this.submitHandler()} type='Submit' >SUBMIT</Button> */}
                     </form>
                 </div>
