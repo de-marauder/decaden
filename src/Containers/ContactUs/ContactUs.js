@@ -120,12 +120,8 @@ class ContactUs extends Component {
                     <form className={classes.Form} >
                         {input}
                         <a className={classes.Submit} 
-                            href={`mailto:ezikegodson@gmail.com?
-                                subject=${this.state.subject}&
-                                body=${this.state.message}&`}>SUBMIT
-                            {/* <Button 
-                                // type='Submit'
-                                doStuff={(event) => this.submitHandler(event)} ></Button>     */}
+                            href={`mailto:ezikegodson@gmail.com?subject=${this.state.subject}&body=${this.state.message}&`}>
+                                SUBMIT
                         </a>
                         {/* <input } 
                             value='SUBMIT' /> */}
