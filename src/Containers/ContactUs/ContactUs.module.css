@@ -2,7 +2,6 @@
     position: relative;
     text-align: center;
     padding: 50px 20px 50px;
-    /* height: 750px; */
     background-color: white;
 }
 
@@ -54,9 +53,13 @@
 }
 
 .Form .Submit {
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: rgb(255, 245, 238);
+    border-radius: 10px;
     border: 2px solid goldenrod;
-    display: block;
     margin: 20px auto;
+    display: table;
 }
 .Form .Submit:hover {
     background-color:goldenrod;
