@@ -10,7 +10,6 @@ const footer = () => {
             <img className={classes.Logo} src={img} alt='' />
             <p>copyright decaden.com</p>
             <Social type={'Horizontal'} />
-            {/* <p>By De-Marauder</p> */}
         </footer>
     )
 }

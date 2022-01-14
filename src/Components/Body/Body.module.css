@@ -413,7 +413,6 @@
 }
 @media (max-width: 500px) {
     .Section4 {
-        /* padding: 0 20px; */
         height: 1900px;
     }
     .Section4 h1 {
@@ -455,7 +454,6 @@
     position: absolute;
     width: 60%;
     opacity: 0.4
-    /* display: inline-flex; */
 }
 
 .Section5 > div {

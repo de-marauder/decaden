@@ -13,8 +13,6 @@ a {
 
 .Logo1 {
     display: none;
-    /* height: 50px */
-
 }
 
 header .Logo1, header .Logo2 {
@@ -62,7 +60,6 @@ header .Logo1, header .Logo2 {
 .Close:hover {
     padding: 2px;
     cursor: pointer;
-    /* border: 1px solid rgb(199, 196, 199) */
 }
 
 .List {

@@ -2,7 +2,6 @@ import React from 'react';
 
 import Button from '../UI/Button/Button';
 import Carousel from '../UI/Carousel/Carousel.js'
-// import Social from '../UI/SocialLinks/Social';
 
 import classes from './Body.module.css';
 import BgImg1 from '../../images/icons8-candlestick-chart-100.png';
@@ -59,7 +58,6 @@ const body = () => {
                     <div className={classes.Column2}>
                         {/* Our Mission */}
                         <div className={classes.Card}>
-                            <div>{/* svg icon */}</div>
                             <div>
                                 <h3>Our Mission</h3> <hr />
                                 <p>
@@ -69,7 +67,6 @@ const body = () => {
                         </div>
                         {/* Our Vision */}
                         <div className={classes.Card}>
-                            <div>{/* svg icon */}</div>
                             <div>
                                 <h3>Our Vision</h3><hr />
                                 <p>
