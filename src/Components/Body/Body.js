@@ -130,7 +130,7 @@ const body = () => {
                             <img src={BgImg6} alt="" />
                         </div><hr />
                         <div className={classes.CardText}>
-                            <h4>INFUENCERS</h4>
+                            <h4>INFLUENCERS</h4>
                             <p>
                                 Our network of influencers will help give you the reach you need.
                             </p>
