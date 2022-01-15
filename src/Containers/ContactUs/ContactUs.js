@@ -110,12 +110,12 @@ class ContactUs extends Component {
                         <span>
                             <img src={emailIcon} alt="email-icon" />
                         </span>
-                        <a href={`mailto:ezikegodson@gmail.com?subject=An inquiry by ${this.state.name} on ${this.state.subject}`}>decadenofficial@gmail.com</a>
+                        <a href={'mailto:decadenofficial@gmail.com'}>decadenofficial@gmail.com</a>
                     </h4>
                     <form className={classes.Form} >
                         {input}
                         <a className={classes.Submit} 
-                            href={`mailto:ezikegodson@gmail.com?subject=${this.state.subject}&body=${this.state.message}&`}>
+                            href={`mailto:decadenofficial@gmail.com?subject=${this.state.subject}&body=${this.state.message}&`}>
                                 SUBMIT
                         </a>
                     </form>
