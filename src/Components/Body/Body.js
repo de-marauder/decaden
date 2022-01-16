@@ -61,7 +61,7 @@ const body = () => {
                             <div>
                                 <h3>Our Mission</h3> <hr />
                                 <p>
-                                    To provide the best marketing strategy tailor-made for yor unique project.
+                                    To provide the best marketing strategy tailor-made for your unique project.
                                 </p>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ const body = () => {
                         <div className={classes.CardText}>
                             <h4>DATA SCIENCE</h4>
                             <p>
-                                Our team of crypto datascience experts will provide a data baked strategy for your project.
+                                Our team of crypto Data Science experts will provide a data-baked strategy for your project.
                             </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const body = () => {
                         </div>
                     </div>
                     <div className={classes.Card}>
-                        {/* card */}
+                         {/* card */}
                         <div className={classes.SVGIcon}>
                             {/* icon */}
                             <img src={BgImg6} alt="" />
@@ -227,7 +227,7 @@ const body = () => {
                         <hr />
                         <div className={classes.CardText}>
                             <h3>Community Management</h3>
-                            <p>We'll Help You Manage Your Community And Turn Them Into An Army.</p>
+                            <p>We'll Help Manage Your Community And Turn it Into An Army.</p>
                         </div>
                     </div>
                 </div>

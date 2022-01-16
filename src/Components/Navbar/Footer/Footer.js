@@ -8,7 +8,7 @@ const footer = () => {
     return (
         <footer className={classes.Footer}>
             <img className={classes.Logo} src={img} alt='' />
-            <p>copyright decaden.com</p>
+            <p>copyright &#169; 2022 decaden.com</p>
             <Social type={'Horizontal'} />
         </footer>
     )
