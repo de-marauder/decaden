@@ -5,9 +5,11 @@ import classes from './Button.module.css'
 const button = (props) => {
     return (
         <button 
-            className={classes[props.type]}
+            type={props.type}
+            className={classes[props.class]}
             onClick={props.doStuff}>
-                {props.children}</button>
+                {props.children}
+            </button>
     )
 }
 

@@ -1,6 +1,7 @@
 import {React, Component} from 'react';
 
 import Input from '../../Components/UI/Input/Input';
+import Button from '../../Components/UI/Button/Button';
 
 import emailIcon from '../../images/email-mail-pngrepo-com.png'
 import classes from './ContactUs.module.css'
@@ -33,6 +34,7 @@ class ContactUs extends Component {
         let name;
         let type;
         let placeholder;
+        let required = false;
 
         let input = Object.keys(this.state).map((id) => {
 
@@ -46,11 +48,13 @@ class ContactUs extends Component {
                     name = id;
                     type='text';
                     placeholder='Subject ';
+                    required = true
                     break
                 case ('email'):
                     name = id;
                     type='email';
                     placeholder='E-mail';
+                    required = true
                     break
                 case ('phone'):
                     name = id;
@@ -61,6 +65,7 @@ class ContactUs extends Component {
                     name = id;
                     type='textarea';
                     placeholder='Message';
+                    required = true
                     break
                 default:
                     name=''
@@ -73,6 +78,7 @@ class ContactUs extends Component {
                 placeholder={placeholder} 
                 type={type}
                 value={this.state[name]}
+                required ={required}
                 update={(event) => this.inputUpdate(event, id)} />
         })
 
@@ -112,12 +118,18 @@ class ContactUs extends Component {
                         </span>
                         <a href={'mailto:decadenofficial@gmail.com'}>decadenofficial@gmail.com</a>
                     </h4>
-                    <form className={classes.Form} >
-                        {input}
-                        <a className={classes.Submit} 
-                            href={`mailto:decadenofficial@gmail.com?subject=${this.state.subject}&body=${this.state.message}&`}>
-                                SUBMIT
-                        </a>
+                    
+                    <form 
+                        className={classes.Form} 
+                        action="https://formsubmit.co/75392e1e38a850ac8d158bd4110b9cf2" 
+                        method="POST">
+                            {input}
+                            <input type="hidden" name="_next" value="http://decaden.tk" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <Button 
+                                class='Submit' 
+                                type='submit' 
+                                >SUBMIT</Button>
                     </form>
                 </div>
             </div>

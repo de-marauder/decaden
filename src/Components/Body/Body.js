@@ -26,7 +26,7 @@ const body = () => {
                 </div>
             </div>
             <div className={classes.Button}>
-                <a href='#3' ><Button type={'Submit'} >Get Started</Button></a>
+                <a href='#3' ><Button class={'Submit'} >Get Started</Button></a>
             </div>
         </section>
     )

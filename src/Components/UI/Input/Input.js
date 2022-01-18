@@ -10,12 +10,14 @@ const input = (props) => {
                 name={props.name}
                 type={props.type}
                 value={props.value}
+                required={props.required}
                 placeholder={props.placeholder}
                 onChange={props.update}></textarea> :
             <input className={classes.Input}
                 name={props.name}
                 type={props.type}
                 value={props.value}
+                required={props.required}
                 placeholder={props.placeholder}
                 onChange={props.update} />
     )
